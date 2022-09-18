@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="shop-name">Jamaler Ma Special Pitha Expo</h1>
+        <br>
+        <form action="">
+            <div id="user-info">
+                <p>Name: <input type="text" placeholder="Enter your Name" name="name" id="name" autofocus></p>
+                <p>Email: <input type="email" placeholder="Enter your Email" name="email" id="email"></p>
+                <p>Address: <input type="text" placeholder="Enter your Delivery Address" name="address" id="address">
+                </p>
+            </div>
+            <br>
+            <div class="fieldsets">
+                <fieldset id="pitha-selection">
+                    <legend>Enter your desire pitha</legend>
+                    <p>
+                        <label for="chitoi">
+                            <input type="radio" name="pitha" id="chitoi">
+                            Chitoi Pitha
+                        </label>
+                    </p>
+                    <p>
+                        <label for="vapa">
+                            <input type="radio" name="pitha" id="vapa">
+                            Vapa Pitha
+                        </label>
+                    </p>
+                    <p>
+                        <label for="tell">
+                            <input type="radio" name="pitha" id="tell">
+                            Tell er Pitha
+                        </label>
+                    </p>
+                </fieldset>
+                <br> <br>
+                <fieldset id="vorta-selection">
+                    <legend>Vorta Selection</legend>
+                    <p>
+                        <label for="sorisa">
+                            <input type="checkbox" name="vorta" id="sorisa">
+                            Sorisa Vorta
+                        </label>
+                    </p>
+                    <p>
+                        <label for="soj">
+                            <input type="checkbox" name="vorta" id="soj">
+                            Soj Patar Vorta
+                        </label>
+                    </p>
+                    <p>
+                        <label for="morich">
+                            <input type="checkbox" name="vorta" id="morich">
+                            Morich Bata
+                        </label>
+                    </p>
+                </fieldset>
+            </div>
+            <br> <br>
+            <p>Special Instruction
+                <br>
+                <textarea name="instruction" id="special-instruction" rows="5"></textarea>
+            </p>
+            <br>
+            <p>
+                <label for="terms-and-conditions">
+                    <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions">
+                    Accept our <a href="#">Terms</a> and <a href="#">Conditions</a>.
+                </label>
+            </p>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
